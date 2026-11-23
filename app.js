@@ -614,7 +614,7 @@ function printLog() {
     const carry = Object.fromEntries(SUM.map(k => [k, r1(prev[k] + page[k])]));
     const foot = (label, o) => `<tr class="tot"><td colspan="6" class="l">${label}</td>${SUM.map(k => `<td class="n">${fmtT(k, r1(o[k]))}</td>`).join('')}<td></td></tr>`;
     html += `<div class="page">
-      <div class="ph"><b>BITÁCORA PERSONAL DE VUELO</b><span>${esc(p.name || '')}${p.rut ? ' · RUT ' + esc(p.rut) : ''} · ${LIC[p.license || 'alumno']}${p.licenseNo ? ' Nº ' + esc(p.licenseNo) : ''}</span><span>Página ${i + 1} de ${pages}</span></div>
+      <div class="ph"><img class="plogo" src="icons/logo-caf-600.png" alt="Club Aéreo Frutillar"><b>BITÁCORA PERSONAL DE VUELO</b><span>${esc(p.name || '')}${p.rut ? ' · RUT ' + esc(p.rut) : ''} · ${LIC[p.license || 'alumno']}${p.licenseNo ? ' Nº ' + esc(p.licenseNo) : ''}</span><span>Página ${i + 1} de ${pages}</span></div>
       <table>
         <colgroup><col style="width:16mm"><col style="width:22mm"><col style="width:14mm"><col style="width:9mm"><col style="width:12mm"><col style="width:12mm">${'<col style="width:11mm">'.repeat(SUM.length)}<col></colgroup>
         <thead>

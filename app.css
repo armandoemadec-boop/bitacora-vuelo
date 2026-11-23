@@ -17,6 +17,8 @@ body { font: 16px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe U
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
 }
 #topbar h1 { margin: 0; font-size: 28px; font-weight: 700; }
+#topbar .brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+#topbar .logo { height: 56px; width: auto; flex: none; }
 main { padding: 4px 12px calc(env(safe-area-inset-bottom) + 84px); max-width: 720px; margin: 0 auto; }
 
 #tabs {
@@ -118,7 +120,10 @@ li.ac { display: flex; justify-content: space-between; align-items: center; gap:
   #print { display: block; font: 7.5pt/1.25 Arial, Helvetica, sans-serif; }
   .page { page-break-after: always; break-after: page; }
   .page:last-child { page-break-after: auto; break-after: auto; }
-  .ph { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 9pt; }
+  .ph { display: flex; justify-content: space-between; align-items: center; gap: 8mm; margin-bottom: 4px; font-size: 9pt; }
+  .ph .plogo { height: 12mm; width: auto; }
+  .ph b { flex: 1; font-size: 11pt; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   table { width: 100%; border-collapse: collapse; table-layout: fixed; }
   th, td { border: 0.5pt solid #444; padding: 2px 3px; text-align: center; overflow: hidden; }
   th { background: #e8e8e8; font-weight: 700; font-size: 6.8pt; }

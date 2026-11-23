@@ -1,9 +1,9 @@
 // Service worker: deja la app disponible sin conexión.
 // Al cambiar archivos de la app, subir CACHE para forzar la actualización.
-const CACHE = 'bitacora-v1';
+const CACHE = 'bitacora-v2';
 const ASSETS = [
   './', './index.html', './app.css', './app.js', './manifest.webmanifest',
-  './icons/icon-180.png', './icons/icon-192.png', './icons/icon-512.png'
+  './icons/icon-180.png', './icons/icon-192.png', './icons/icon-512.png', './icons/logo-caf-600.png'
 ];
 
 self.addEventListener('install', e => {
